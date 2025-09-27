@@ -1,4 +1,7 @@
 export default {
+  
+  base: '/',
+
   title: '算法源码空间',
   description: '硬核C++算法题解 | 数据结构深度解析 | 竞赛编程实战',
   appearance: 'dark',
