@@ -1,0 +1,172 @@
+/* 技术博客主题配色 */
+:root {
+  --vp-c-brand: #0ea5e9;    /* 科技蓝 */
+  --vp-c-brand-light: #38bdf8;
+  --vp-c-brand-lighter: #7dd3fc;
+  --vp-c-brand-dark: #0284c7;
+  --vp-c-brand-darker: #0369a1;
+  
+  --vp-c-bg: #0f172a;       /* 深蓝背景 */
+  --vp-c-bg-alt: #1e293b;
+  --vp-c-bg-soft: #334155;
+}
+
+/* 隐藏所有日期元素 */
+.VPLastUpdated,
+.last-updated {
+  display: none !important;
+}
+
+/* 专业级标题样式 */
+.vp-doc h1 {
+  background: linear-gradient(135deg, #0ea5e9 0%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 2px solid #0ea5e9;
+  padding-bottom: 0.5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.vp-doc h2 {
+  border-left: 4px solid var(--vp-c-brand);
+  padding: 0.5rem 1rem;
+  margin: 2.5rem 0 1.5rem;
+  background: linear-gradient(90deg, rgba(14, 165, 233, 0.1), transparent);
+  border-radius: 0 8px 8px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.vp-doc h3 {
+  color: var(--vp-c-brand-light);
+  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* 专业代码块样式 */
+.vp-doc div[class*='language-'] {
+  border-radius: 10px;
+  margin: 1.5rem 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  background: #1e293b;
+}
+
+.vp-doc pre {
+  padding: 1.5rem;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+/* C++语法深度优化 */
+.vp-doc .language-cpp .token.keyword {
+  color: #f472b6;          /* 粉色关键字 */
+  font-weight: 600;
+  text-shadow: 0 0 8px rgba(244, 114, 182, 0.3);
+}
+
+.vp-doc .language-cpp .token.function {
+  color: #34d399;          /* 绿色函数名 */
+  font-weight: 500;
+}
+
+.vp-doc .language-cpp .token.comment {
+  color: #94a3b8;          /* 灰色注释 */
+  font-style: italic;
+}
+
+.vp-doc .language-cpp .token.string {
+  color: #fbbf24;          /* 黄色字符串 */
+}
+
+.vp-doc .language-cpp .token.number {
+  color: #60a5fa;          /* 蓝色数字 */
+  font-weight: 500;
+}
+
+.vp-doc .language-cpp .token.operator {
+  color: #c084fc;          /* 紫色操作符 */
+}
+
+/* 导航栏专业样式 */
+.VPNav {
+  background: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.VPNavBarTitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* 侧边栏专业样式 */
+.VPSidebar {
+  background: var(--vp-c-bg-alt);
+}
+
+.VPSidebarItem.level-0 > .item > .text {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--vp-c-brand-light);
+}
+
+.VPSidebarItem.level-1 > .item > .text {
+  font-weight: 500;
+}
+
+/* 专业区块样式 */
+.vp-doc .custom-block.tip {
+  border-color: var(--vp-c-brand);
+  background: rgba(14, 165, 233, 0.05);
+  border-radius: 8px;
+}
+
+.vp-doc .custom-block.warning {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.05);
+}
+
+/* 表格专业样式 */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.vp-doc tr:nth-child(2n) {
+  background: rgba(14, 165, 233, 0.03);
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .vp-doc h1 {
+    font-size: 2.2rem;
+  }
+  
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-brand);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-brand-light);
+}

@@ -1,16 +1,23 @@
-## Hi there 👋
+# 算法博客项目
 
-<!--
-**AugustusDeception/AugustusDeception** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+基于VitePress构建的C++算法博客，包含详细的算法题解和数据结构实现。
 
-Here are some ideas to get you started:
+## 🚀 快速开始
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 环境要求
+- Node.js 16.0+
+- npm 7.0+
+
+### 本地开发
+```bash
+# 安装依赖
+npm install
+
+# 启动开发服务器
+npm run docs:dev
+
+# 构建项目
+npm run docs:build
+
+# 预览构建结果
+npm run docs:preview
